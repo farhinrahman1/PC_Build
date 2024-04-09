@@ -6,89 +6,124 @@
     <title>PC Build</title>
     <link rel="stylesheet" href="./css/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <script src="hello.js"></script>
 </head>
 <body>
-    <!-- first navbar -->
-    <nav class="bg-[#091235] text-white p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <!-- logo beside h1 -->
-            <div class="flex items-center">
-                <img src="pc-logo1.png" alt="logo" class="w-20 h-20">
-                <h1 class="text-2xl font-bold">Welcome to PC Build</h1>
-            </div>
-           
-            <!-- search bar -->
-            <form class="flex items-center max-w-lg mx-auto">   
-                <div class="relative w-full">
-                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none text-black">
-                        <svg class="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-                        </svg>
-                    </div>
-                    <input type="text" id="search" class="bg-gray-50 border border-gray-50 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search" required />
-                    
-                </div>
-                <button type="submit" class="inline-flex items-center py-2 px-3 ms-2 text-sm font-medium text-white bg-blue-800 rounded-lg hover:bg-opacity-50 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    Search
-                </button>
-            </form>
-
-            <!-- nav links -->
-            <div class="flex mx-auto justify-center items-center ">
-                    <div class="flex gap-x-4">
-                        <button class="bg-[#20337c] text-white border border-black border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
-                            <span class="bg-[#091235] shadow-[#091235] absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
-                            About
-                        </button>
-                        <button class="bg-[#20337c] text-white border border-black border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
-                            <span class="bg-[#091235] shadow-[#091235] absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
-                            Offers
-                        </button>
-                        <button class="bg-[#20337c] text-white border border-black border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
-                            <span class="bg-[#091235] shadow-[#091235] absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
-                            SignUp
-                        </button>
-                        <button class="bg-[#20337c] text-white border border-black border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
-                            <span class="bg-[#091235] shadow-[#091235] absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
-                            Contact
-                        </button><br>
-                    </div>
-                <div>
-                    <a href="#">
-                            <button class="bg-[#fdd000] text-black border border-black border-b-4 font-bold overflow-hidden relative px-3 py-5 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
-                                <span class="bg-[#091235] shadow-[#091235] absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
-                                <i class="fas fa-shopping-cart text-[#091235]"></i>
-                                Cart
-                            </button> 
+     <!-- first navbar -->
+ <header class=' py-4 px-4 sm:px-10 bg-[#091235] font-[sans-serif] min-h-[70px]'>
+    <div class='flex flex-wrap items-center gap-x-2 max-lg:gap-y-6'>
+      <a href="javascript:void(0)"><img src="pc-logo1.png" alt="logo" class='w-20' />
+      </a>
+      <button id="toggle" class='lg:hidden ml-auto'>
+        <svg class="w-7 h-7" fill="#fdd000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      <div class='flex lg:ml-auto max-lg:w-full'>
+        <span class="relative mr-8">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26px" height="26px" viewBox="0 0 24 24"
+              class="cursor-pointer mt-2 hover:fill-[#fdd000] inline-block" fill="#fff">
+              <path
+                d="M1 1a1 1 0 1 0 0 2h1.78a.694.694 35.784 0 1 .657.474l3.297 9.893c.147.44.165.912.053 1.362l-.271 1.087C6.117 17.41 7.358 19 9 19h12a1 1 0 1 0 0-2H9c-.39 0-.64-.32-.545-.697l.205-.818A.64.64 142.028 0 1 9.28 15H20a1 1 0 0 0 .95-.684l2.665-8A1 1 0 0 0 22.666 5H6.555a.694.694 35.783 0 1-.658-.474l-.948-2.842A1 1 0 0 0 4 1zm7 19a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm12 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+                data-original="#000000" paint-order="fill markers stroke"></path>
+            </svg>
+            <span class="absolute left-auto -ml-1 top-0 rounded-full bg-red-500 px-1 py-0 text-xs text-white">0</span>
+          </span>
+        <div
+          class='flex xl:w-80 max-xl:w-full bg-white px-6 py-3 rounded outline outline-transparent focus-within:outline-[#091235]'>
+          <input type='text' placeholder='Search'
+            class='w-full text-sm bg-transparent rounded outline-none pr-2' />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.904 192.904" width="16px"
+            class="cursor-pointer fill-black">
+            <path
+              d="m190.707 180.101-47.078-47.077c11.702-14.072 18.752-32.142 18.752-51.831C162.381 36.423 125.959 0 81.191 0 36.422 0 0 36.423 0 81.193c0 44.767 36.422 81.187 81.191 81.187 19.688 0 37.759-7.049 51.831-18.751l47.079 47.078a7.474 7.474 0 0 0 5.303 2.197 7.498 7.498 0 0 0 5.303-12.803zM15 81.193C15 44.694 44.693 15 81.191 15c36.497 0 66.189 29.694 66.189 66.193 0 36.496-29.692 66.187-66.189 66.187C44.693 147.38 15 117.689 15 81.193z">
+            </path>
+          </svg>
+        </div>
+      </div>
+      
+      <ul id="collapseMenu" class='lg:!flex lg:ml-14 lg:space-x-5 max-lg:space-y-2 max-lg:hidden max-lg:py-4 max-lg:w-full'>
+        <li class="bg-[#20337c] cursor-pointer max-lg:border-b max-lg:py-2 text-white border border-black border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+            <a href="javascript:void(0)" class="bg-[#091235] max-lg:shadow-[#091235] absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></a>
+            About
+        </li>
+        <li class="bg-[#20337c] cursor-pointer max-lg:border-b max-lg:py-2 text-white border border-black border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+            <a href="javascript:void(0)" class="bg-[#091235] absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></a>
+            Offers
+        </li>
+        <li class="bg-[#20337c] cursor-pointer max-lg:border-b max-lg:py-2 text-white border border-black border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+            <a href="javascript:void(0)" class="bg-[#091235] max-lg:shadow-[#091235] absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></a>
+            SignUp
+        </li>
+        <li class="bg-[#20337c] cursor-pointer max-lg:border-b max-lg:py-2 text-white border border-black border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+            <a href="javascript:void(0)" class="bg-[#091235] max-lg:shadow-[#091235] absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></a>
+             Contact
+        </li>
+      </ul>
+      
+      
+    </div>
+  </header>
+    <!-- second navbar -->
+      <nav class="flex flex-wrap items-center justify-between p-3 bg-[#fdd000]">
+        <div class="flex md:hidden">
+            <button id="hamburger">
+              <img class="toggle block" src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png" width="40" height="40" />
+              <img class="toggle hidden" src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png" width="40" height="40" />
+            </button>
+        </div>
+        <div class="ml-[150px]">
+                <div class="toggle hidden w-full mx-auto md:w-auto md:flex text-right text-bold mt-5 md:mt-0 border-t-2 border-blue-900 md:border-none">
+                        <a href="#"
+                        class="block mr-4 md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-3 py-3 md:border-none">Desktop
+                    </a>
+                    <a href="#"
+                        class="block mr-4 md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-3 py-3  md:border-none">Laptop
+                    </a>
+                    <a href="#"
+                        class="block mr-4 md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-3 py-3  md:border-none">PC
+                    </a>
+                    <a href="#"
+                        class="block mr-4 md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-3 py-3  md:border-none">Printer
+                    </a>
+                    <a href="#"
+                        class="block mr-4 md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-3 py-3  md:border-none">Storage
+                    </a>
+                    <a href="#"
+                        class="block mr-4 md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-3 py-3  md:border-none">Monitor
+                    </a>
+                    <a href="#"
+                        class="block mr-4 md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-3 py-3  md:border-none">Gaming
+                    </a>
+                    <a href="#"
+                        class="block mr-4 md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-3 py-3  md:border-none">Speaker 
+                    </a>
+                    <a href="#"
+                        class="block mr-4 md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-3 py-3 md:border-none">Accessories
+                    </a>
+                    <a href="#"
+                        class="block mr-4 md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-3 py-3 md:border-none">Software
+                    </a>
+                    <a href="#"
+                        class="block mr-4 md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-3 py-3 md:border-none">Networking
+                    </a>
+                    <a href="#"
+                        class="block mr-4 md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-3 py-3 md:border-none">Gadget
                     </a>
                 </div>
-            </div>
-    </nav>
-    <!-- second navbar -->
-    <nav>
-        <div class="bg-[#f5cc15] text-white p-4">
-            <div class="flex justify-between items-center h-10">
-                <div class="flex items-center mx-auto">
-                        <button>
-                        <a href="#" class="bg-[#091235] cursor-pointer font-sans font-medium hover:bg-opacity-65 rounded-sm p-2">Desktop</a>
-                        <a href="#" class="bg-[#091235] cursor-pointer font-sans font-medium hover:bg-opacity-65 rounded-sm p-2">Laptop</a>
-                        <a href="#" class="bg-[#091235] cursor-pointer font-sans font-medium hover:bg-opacity-65 rounded-sm p-2">PC</a>
-                        <a href="#" class="bg-[#091235] cursor-pointer font-sans font-medium hover:bg-opacity-65 rounded-sm p-2">Printer</a>
-                        <a href="#" class="bg-[#091235] cursor-pointer font-sans font-medium hover:bg-opacity-65 rounded-sm p-2">Storage</a>
-                        <a href="#" class="bg-[#091235] cursor-pointer font-sans font-medium hover:bg-opacity-65 rounded-sm p-2">Monitor</a>
-                        <a href="#" class="bg-[#091235] cursor-pointer font-sans font-medium hover:bg-opacity-65 rounded-sm p-2">Gaming</a>
-                        <a href="#" class="bg-[#091235] cursor-pointer font-sans font-medium hover:bg-opacity-65 rounded-sm p-2">Speaker</a>
-                        <a href="#" class="bg-[#091235] cursor-pointer font-sans font-medium hover:bg-opacity-65 rounded-sm p-2">Accessories</a>
-                        <a href="#" class="bg-[#091235] cursor-pointer font-sans font-medium hover:bg-opacity-65 rounded-sm p-2">Software</a>
-                        <a href="#" class="bg-[#091235] cursor-pointer font-sans font-medium hover:bg-opacity-65 rounded-sm p-2">Networking</a>
-                        <a href="#" class="bg-[#091235] cursor-pointer font-sans font-medium hover:bg-opacity-65 rounded-sm p-2">Gadget</a>
-                        </div>
-                    </button>
-                </div>
-            </div>
         </div>
     </nav>
+    <script>
+        document.getElementById("hamburger").onclick = function toggleMenu() {
+            const navToggle = document.getElementsByClassName("toggle");
+            for (let i = 0; i < navToggle.length; i++) {
+              navToggle.item(i).classList.toggle("hidden");
+            }
+          };
+    </script>
+
 
 
     <!-- Hero Section -->
@@ -96,91 +131,10 @@
         <div class="container mx-auto text-center">
             <h1 class="text-4xl md:text-6xl font-semibold mb-4">Build Your Dream PC</h1>
             <p class="text-lg md:text-xl mb-8">Customize your gaming rig or workstation with ease.</p>
-            <a href="#" class="bg-[#20337c] hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded">Get Started</a>
+            <a href="#" class="bg-[#091235] hover:opacity-50 text-white font-semibold px-6 py-3 rounded">Get Started</a>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <!-- <section class="py-20">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold text-center mb-14">Why Choose Us?</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 m-10">
-                <div class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#091235]">
-                    <svg
-                      stroke-linejoin="round"
-                      stroke-linecap="round"
-                      stroke-width="2"
-                      stroke="#000000"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      class="text-5xl h-12 w-12 stroke-gray-800 group-hover:stroke-gray-400"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <rect ry="2" rx="2" height="14" width="20" y="3" x="2"></rect>
-                      <line y2="21" x2="16" y1="21" x1="8"></line>
-                      <line y2="21" x2="12" y1="17" x1="12"></line>
-                    </svg>
-                    <p class="font-bold text-2xl group-hover:text-white text-black/80">Understand Your Needs</p>
-                    <p class="text-gray-400 text-sm">
-                        Before diving into the intricacies of PC building, it's essential to define your requirements. Are you a gamer seeking high frame rates and ultra-settings? Or perhaps a content creator needing powerful rendering capabilities? By understanding your needs, you can select components that align with your intended usage and budget.
-                    </p>
-                    <p
-                      style="-webkit-text-stroke: 1px gray;
-                    -webkit-text-fill-color: transparent;"
-                      class="text-5xl font-bold self-end">09</p>
-                    </div>
-
-                <div class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#091235]">
-                <svg
-                stroke-linejoin="round"
-                stroke-linecap="round"
-                stroke-width="2"
-                stroke="#000000"
-                fill="none"
-                viewBox="0 0 24 24"
-                class="text-5xl h-12 w-12 stroke-gray-800 group-hover:stroke-gray-400"
-                xmlns="http://www.w3.org/2000/svg">
-                <rect ry="2" rx="2" height="14" width="20" y="3" x="2"></rect>
-                <line y2="21" x2="16" y1="21" x1="8"></line>
-                <line y2="21" x2="12" y1="17" x1="12"></line>
-                </svg>
-
-                <p class="font-bold text-2xl group-hover:text-white text-black/80">Budgeting and Cost Optimization</p>
-                <p class="text-gray-400 text-sm">
-                    Building a PC can be a significant investment, but it doesn't have to break the bank. PC build website often include budgeting tools and build configurators that allow you to estimate costs based on your chosen components. Moreover, we provide insights into cost-effective alternatives and bundle deals, helping you optimize your build without compromising on performance.
-                </p>
-                <p
-                style="-webkit-text-stroke: 1px gray;
-                -webkit-text-fill-color: transparent;"
-                class="text-5xl font-bold self-end">09</p>
-                </div>
-
-                <div class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#091235]">
-                    <svg
-                    stroke-linejoin="round"
-                    stroke-linecap="round"
-                    stroke-width="2"
-                    stroke="#000000"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    class="text-5xl h-12 w-12 stroke-gray-800 group-hover:stroke-gray-400"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <rect ry="2" rx="2" height="14" width="20" y="3" x="2"></rect>
-                    <line y2="21" x2="16" y1="21" x1="8"></line>
-                    <line y2="21" x2="12" y1="17" x1="12"></line>
-                    </svg>
-                    
-                    <p class="font-bold text-2xl group-hover:text-white text-black/80">Future Upgradability and Expansion</p>
-                    <p class="text-gray-400 text-sm">
-                        A well-built PC is future-proofed for potential upgrades and expansions. PC build website will help you plan for the future by recommending components that offer scalability and compatibility with upcoming technologies. Whether it's upgrading your GPU for better gaming performance or adding more RAM for multitasking capabilities, these platforms ensure that your PC remains relevant in the long run.
-                    </p>
-                    <p
-                    style="-webkit-text-stroke: 1px gray;
-                    -webkit-text-fill-color: transparent;"
-                    class="text-5xl font-bold self-end">09</p>
-                    </div>
-            </div>
-        </div>
-    </section> -->
 
     <!-- footer -->
     <footer class="bg-[#091235] text-white py-5">
@@ -311,4 +265,5 @@
 
 
 </body>
+
 </html>
