@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <!-- navbar with bg-[#091235] -->
+    <!-- first navbar -->
     <nav class="bg-[#091235] text-white p-4">
         <div class="container mx-auto flex justify-between items-center">
             <!-- logo beside h1 -->
@@ -17,44 +17,171 @@
                 <img src="pc-logo1.png" alt="logo" class="w-20 h-20">
                 <h1 class="text-2xl font-bold">Welcome to PC Build</h1>
             </div>
+           
             <!-- search bar -->
-            
-<form class="flex items-center max-w-lg mx-auto">   
-    <div class="relative w-full">
-        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none text-black">
-            <svg class="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-            </svg>
-        </div>
-        <input type="text" id="search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search" required />
-        
-    </div>
-    <button type="submit" class="inline-flex items-center py-2.5 px-3 ms-2 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        Search
-    </button>
-</form>
+            <form class="flex items-center max-w-lg mx-auto">   
+                <div class="relative w-full">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none text-black">
+                        <svg class="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                        </svg>
+                    </div>
+                    <input type="text" id="search" class="bg-gray-50 border border-gray-50 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search" required />
+                    
+                </div>
+                <button type="submit" class="inline-flex items-center py-2 px-3 ms-2 text-sm font-medium text-white bg-blue-800 rounded-lg hover:bg-opacity-50 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Search
+                </button>
+            </form>
 
             <!-- nav links -->
             <div class="flex mx-auto justify-center items-center ">
-                <div>
-                    <ul class="flex">
-                        <li class="bg-blue-500 font-sans font-medium hover:bg-opacity-50 mx-2 p-2 rounded-md"><a href="#" class="hover:underline">About</a></li>
-                        <li class="bg-blue-500 font-sans font-medium hover:bg-opacity-50 mx-2 p-2 rounded-md"><a href="#" class="hover:underline">Offers</a></li>
-                        <li class="bg-blue-500 font-sans font-medium hover:bg-opacity-50 mx-2 p-2 rounded-md"><a href="#" class="hover:underline">SignUp</a></li>
-                        <li class="bg-blue-500 font-sans font-medium hover:bg-opacity-50 mx-2 p-2 rounded-md"><a href="#" class="hover:underline">Contact</a></li>
-                    </ul>
-                </div>
+                    <div class="flex gap-x-4">
+                        <button class="bg-[#20337c] text-white border border-black border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                            <span class="bg-[#091235] shadow-[#091235] absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+                            About
+                        </button>
+                        <button class="bg-[#20337c] text-white border border-black border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                            <span class="bg-[#091235] shadow-[#091235] absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+                            Offers
+                        </button>
+                        <button class="bg-[#20337c] text-white border border-black border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                            <span class="bg-[#091235] shadow-[#091235] absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+                            SignUp
+                        </button>
+                        <button class="bg-[#20337c] text-white border border-black border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                            <span class="bg-[#091235] shadow-[#091235] absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+                            Contact
+                        </button><br>
+                    </div>
                 <div>
                     <a href="#">
-                        <div class="bg-gradient-to-r text-black font-semibold mx-4 px-1 py-3 rounded-lg bg-[#ffd000] hover:from-blue-500 hover:to-[#ffd000]">
-                            <i class="fas fa-shopping-cart"></i>
-                            Cart
-                        </div>
+                            <button class="bg-[#fdd000] text-black border border-black border-b-4 font-bold overflow-hidden relative px-3 py-5 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                                <span class="bg-[#091235] shadow-[#091235] absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+                                <i class="fas fa-shopping-cart text-[#091235]"></i>
+                                Cart
+                            </button> 
                     </a>
                 </div>
             </div>
-
     </nav>
+    <!-- second navbar -->
+    <nav>
+        <div class="bg-[#2B4257] text-white p-4">
+            <div class="flex justify-between items-center h-10">
+                <div class="flex items-center mx-auto">
+                    <button class="flex">
+                        <div class="mx-auto gap-x-5">
+                        <a href="#" class="bg-[#091235] cursor-pointer font-sans font-medium hover:bg-opacity-65 rounded-sm p-2">Desktop</a>
+                        <a href="#" class="bg-[#091235] cursor-pointer font-sans font-medium hover:bg-opacity-65 rounded-sm p-2">Laptop</a>
+                        <a href="#" class="bg-[#091235] cursor-pointer font-sans font-medium hover:bg-opacity-65 rounded-sm p-2">PC</a>
+                        <a href="#" class="bg-[#091235] cursor-pointer font-sans font-medium hover:bg-opacity-65 rounded-sm p-2">Printer</a>
+                        <a href="#" class="bg-[#091235] cursor-pointer font-sans font-medium hover:bg-opacity-65 rounded-sm p-2">Storage</a>
+                        <a href="#" class="bg-[#091235] cursor-pointer font-sans font-medium hover:bg-opacity-65 rounded-sm p-2">Monitor</a>
+                        <a href="#" class="bg-[#091235] cursor-pointer font-sans font-medium hover:bg-opacity-65 rounded-sm p-2">Gaming</a>
+                        <a href="#" class="bg-[#091235] cursor-pointer font-sans font-medium hover:bg-opacity-65 rounded-sm p-2">Speaker</a>
+                        <a href="#" class="bg-[#091235] cursor-pointer font-sans font-medium hover:bg-opacity-65 rounded-sm p-2">Accessories</a>
+                        <a href="#" class="bg-[#091235] cursor-pointer font-sans font-medium hover:bg-opacity-65 rounded-sm p-2">Software</a>
+                        <a href="#" class="bg-[#091235] cursor-pointer font-sans font-medium hover:bg-opacity-65 rounded-sm p-2">Networking</a>
+                        <a href="#" class="bg-[#091235] cursor-pointer font-sans font-medium hover:bg-opacity-65 rounded-sm p-2">Gadget</a>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="bg-gray-800 text-white py-20">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-semibold mb-4">Build Your Dream PC</h1>
+            <p class="text-lg md:text-xl mb-8">Customize your gaming rig or workstation with ease.</p>
+            <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-center mb-14">Why Choose Us?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#091235]">
+                    <svg
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      stroke="#000000"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      class="text-5xl h-12 w-12 stroke-gray-800 group-hover:stroke-gray-400"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <rect ry="2" rx="2" height="14" width="20" y="3" x="2"></rect>
+                      <line y2="21" x2="16" y1="21" x1="8"></line>
+                      <line y2="21" x2="12" y1="17" x1="12"></line>
+                    </svg>
+                    <p class="font-bold text-2xl group-hover:text-white text-black/80">Understand Your Needs</p>
+                    <p class="text-gray-400 text-sm">
+                        Before diving into the intricacies of PC building, it's essential to define your requirements. Are you a gamer seeking high frame rates and ultra-settings? Or perhaps a content creator needing powerful rendering capabilities? By understanding your needs, you can select components that align with your intended usage and budget.
+                    </p>
+                    <p
+                      style="-webkit-text-stroke: 1px gray;
+                    -webkit-text-fill-color: transparent;"
+                      class="text-5xl font-bold self-end">09</p>
+                    </div>
+
+                    <div class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#091235]">
+                    <svg
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke-width="2"
+                    stroke="#000000"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    class="text-5xl h-12 w-12 stroke-gray-800 group-hover:stroke-gray-400"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect ry="2" rx="2" height="14" width="20" y="3" x="2"></rect>
+                    <line y2="21" x2="16" y1="21" x1="8"></line>
+                    <line y2="21" x2="12" y1="17" x1="12"></line>
+                    </svg>
+
+                    <p class="font-bold text-2xl group-hover:text-white text-black/80">Budgeting and Cost Optimization</p>
+                    <p class="text-gray-400 text-sm">
+                        Building a PC can be a significant investment, but it doesn't have to break the bank. PC build website often include budgeting tools and build configurators that allow you to estimate costs based on your chosen components. Moreover, we provide insights into cost-effective alternatives and bundle deals, helping you optimize your build without compromising on performance.
+                    </p>
+                    <p
+                    style="-webkit-text-stroke: 1px gray;
+                    -webkit-text-fill-color: transparent;"
+                    class="text-5xl font-bold self-end">09</p>
+                    </div>
+
+                    <div class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#091235]">
+                        <svg
+                        stroke-linejoin="round"
+                        stroke-linecap="round"
+                        stroke-width="2"
+                        stroke="#000000"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        class="text-5xl h-12 w-12 stroke-gray-800 group-hover:stroke-gray-400"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect ry="2" rx="2" height="14" width="20" y="3" x="2"></rect>
+                        <line y2="21" x2="16" y1="21" x1="8"></line>
+                        <line y2="21" x2="12" y1="17" x1="12"></line>
+                        </svg>
+                        
+                        <p class="font-bold text-2xl group-hover:text-white text-black/80">Future Upgradability and Expansion</p>
+                        <p class="text-gray-400 text-sm">
+                            A well-built PC is future-proofed for potential upgrades and expansions. PC build website will help you plan for the future by recommending components that offer scalability and compatibility with upcoming technologies. Whether it's upgrading your GPU for better gaming performance or adding more RAM for multitasking capabilities, these platforms ensure that your PC remains relevant in the long run.
+                        </p>
+                        <p
+                        style="-webkit-text-stroke: 1px gray;
+                        -webkit-text-fill-color: transparent;"
+                        class="text-5xl font-bold self-end">09</p>
+                        </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>
