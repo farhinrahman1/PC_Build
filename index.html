@@ -45,19 +45,19 @@
       </div>
       
       <ul id="collapseMenu" class='lg:!flex lg:ml-14 lg:space-x-5 max-lg:space-y-2 max-lg:hidden max-lg:py-4 max-lg:w-full'>
-        <li class="bg-[#20337c] cursor-pointer max-lg:border-b max-lg:py-2 text-white border border-black border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+        <li class="bg-[#fdd000] font-sans cursor-pointer max-lg:border-b max-lg:py-2 text-white border border-black border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-50 outline-none duration-300 group">
             <a href="javascript:void(0)" class="bg-[#091235] max-lg:shadow-[#091235] absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></a>
             About
         </li>
-        <li class="bg-[#20337c] cursor-pointer max-lg:border-b max-lg:py-2 text-white border border-black border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+        <li class="bg-[#fdd000] font-sans cursor-pointer max-lg:border-b max-lg:py-2 text-white border border-black border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
             <a href="javascript:void(0)" class="bg-[#091235] absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></a>
             Offers
         </li>
-        <li class="bg-[#20337c] cursor-pointer max-lg:border-b max-lg:py-2 text-white border border-black border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+        <li class="bg-[#fdd000] font-sans cursor-pointer max-lg:border-b max-lg:py-2 text-white border border-black border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
             <a href="javascript:void(0)" class="bg-[#091235] max-lg:shadow-[#091235] absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></a>
             SignUp
         </li>
-        <li class="bg-[#20337c] cursor-pointer max-lg:border-b max-lg:py-2 text-white border border-black border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+        <li class="bg-[#fdd000] font-sans cursor-pointer max-lg:border-b max-lg:py-2 text-white border border-black border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
             <a href="javascript:void(0)" class="bg-[#091235] max-lg:shadow-[#091235] absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></a>
              Contact
         </li>
@@ -67,53 +67,71 @@
     </div>
   </header>
     <!-- second navbar -->
-      <nav class="flex flex-wrap items-center justify-between p-3 bg-[#fdd000]">
+      <nav class="flex flex-wrap items-center justify-between p-2 bg-[#fdd000]">
         <div class="flex md:hidden">
             <button id="hamburger">
               <img class="toggle block" src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png" width="40" height="40" />
               <img class="toggle hidden" src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png" width="40" height="40" />
             </button>
         </div>
-        <div class="ml-[150px]">
-                <div class="toggle hidden w-full mx-auto md:w-auto md:flex text-right text-bold mt-5 md:mt-0 border-t-2 border-blue-900 md:border-none">
-                        <a href="#"
-                        class="block mr-4 md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-3 py-3 md:border-none">Desktop
+        <style>
+          @media (max-width: 768px) {
+              .toggle li a {
+                  width: 100%; /* Adjust the width as needed */
+              }
+          }
+        </style>
+            <ul class="toggle hidden w-full mx-auto md:flex text-right text-bold mt-2 md:mt-0 md:border-none space-x-4 md:ml-[150px]">
+                <li class="bg-[#091235] cursor-pointer max-lg:border-b max-lg:py-2 text-white border border-black font-medium mb-2 px-1 py-0 rounded-md">
+                  <a  class="block md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-1 sm:py-1 md:border-none">Desktop
                     </a>
-                    <a href="#"
-                        class="block mr-4 md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-3 py-3  md:border-none">Laptop
+                </li>
+                <li class="bg-[#091235] cursor-pointer max-lg:border-b max-lg:py-2 text-white border border-black font-medium mb-2 px-1 py-0 rounded-md">
+                  <a  class="block md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-1 sm:py-1 md:border-none">Laptop
                     </a>
-                    <a href="#"
-                        class="block mr-4 md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-3 py-3  md:border-none">PC
+                </li>
+                <li class="bg-[#091235] cursor-pointer max-lg:border-b max-lg:py-2 text-white border border-black font-medium mb-2 px-1 py-0 rounded-md">
+                  <a  class="block md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-1 sm:py-1 md:border-none">PC
                     </a>
-                    <a href="#"
-                        class="block mr-4 md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-3 py-3  md:border-none">Printer
+                </li>
+                <li class="bg-[#091235] cursor-pointer max-lg:border-b max-lg:py-2 text-white border border-black font-medium mb-2 px-1 py-0 rounded-md">
+                  <a  class="block md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-1 sm:py-1 md:border-none">Printer
                     </a>
-                    <a href="#"
-                        class="block mr-4 md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-3 py-3  md:border-none">Storage
+                </li>
+                <li class="bg-[#091235] cursor-pointer max-lg:border-b max-lg:py-2 text-white border border-black font-medium mb-2 px-1 py-0 rounded-md">
+                  <a  class="block md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-1 sm:py-1 md:border-none">Storage
                     </a>
-                    <a href="#"
-                        class="block mr-4 md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-3 py-3  md:border-none">Monitor
+                </li>
+                <li class="bg-[#091235] cursor-pointer max-lg:border-b max-lg:py-2 text-white border border-black font-medium mb-2 px-1 py-0 rounded-md">
+                  <a  class="block md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-1 sm:py-1 md:border-none">Monitor 
                     </a>
-                    <a href="#"
-                        class="block mr-4 md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-3 py-3  md:border-none">Gaming
+                </li>
+                <li class="bg-[#091235] cursor-pointer max-lg:border-b max-lg:py-2 text-white border border-black font-medium mb-2 px-1 py-0 rounded-md">
+                  <a  class="block md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-1 sm:py-1 md:border-none">Gaming
                     </a>
-                    <a href="#"
-                        class="block mr-4 md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-3 py-3  md:border-none">Speaker 
+                </li>
+                <li class="bg-[#091235] cursor-pointer max-lg:border-b max-lg:py-2 text-white border border-black font-medium mb-2 px-1 py-0 rounded-md">
+                  <a  class="block md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-1 sm:py-1 md:border-none">Speaker
                     </a>
-                    <a href="#"
-                        class="block mr-4 md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-3 py-3 md:border-none">Accessories
+                </li>
+                <li class="bg-[#091235] cursor-pointer max-lg:border-b max-lg:py-2 text-white border border-black font-medium mb-2 px-1 py-0 rounded-md">
+                  <a  class="block md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-1 sm:py-1 md:border-none">Accessories
                     </a>
-                    <a href="#"
-                        class="block mr-4 md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-3 py-3 md:border-none">Software
+                </li>
+                <li class="bg-[#091235] cursor-pointer max-lg:border-b max-lg:py-2 text-white border border-black font-medium mb-2 px-1 py-0 rounded-md">
+                  <a  class="block md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-1 sm:py-1 md:border-none">Software
                     </a>
-                    <a href="#"
-                        class="block mr-4 md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-3 py-3 md:border-none">Networking
+                </li>
+                <li class="bg-[#091235] cursor-pointer max-lg:border-b max-lg:py-2 text-white border border-black font-medium mb-2 px-1 py-0 rounded-md">
+                  <a  class="block md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-1 sm:py-1 md:border-none">Networking
                     </a>
-                    <a href="#"
-                        class="block mr-4 md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-3 py-3 md:border-none">Gadget
+                </li>
+                <li class="bg-[#091235] cursor-pointer max-lg:border-b max-lg:py-2 text-white border border-black font-medium mb-2 px-1 py-0 rounded-md">
+                  <a  class="block md:inline-block bg-[#091235] text-white font-sans font-medium hover:opacity-50 px-1 sm:py-1 md:border-none">Gadget
                     </a>
-                </div>
-        </div>
+                </li>
+                </ul>
+
     </nav>
     <script>
         document.getElementById("hamburger").onclick = function toggleMenu() {
