@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="hello.js"></script>
+
+</head>
+<body>
+    <header class=' py-4 px-4 sm:px-10 bg-[#091235] font-[sans-serif] min-h-[70px]'>
+        <div class='flex flex-wrap items-center gap-x-2 max-lg:gap-y-6'>
+          <a href="javascript:void(0)"><img src="pc-logo1.png" alt="logo" class='w-20' />
+          </a>
+          <button id="toggle" class='lg:hidden ml-auto'>
+            <svg class="w-7 h-7" fill="#fdd000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+          <div class='flex lg:ml-auto max-lg:w-full'>
+            <span class="relative mr-8">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26px" height="26px" viewBox="0 0 24 24"
+                  class="cursor-pointer mt-2 hover:fill-[#fdd000] inline-block" fill="#fff">
+                  <path
+                    d="M1 1a1 1 0 1 0 0 2h1.78a.694.694 35.784 0 1 .657.474l3.297 9.893c.147.44.165.912.053 1.362l-.271 1.087C6.117 17.41 7.358 19 9 19h12a1 1 0 1 0 0-2H9c-.39 0-.64-.32-.545-.697l.205-.818A.64.64 142.028 0 1 9.28 15H20a1 1 0 0 0 .95-.684l2.665-8A1 1 0 0 0 22.666 5H6.555a.694.694 35.783 0 1-.658-.474l-.948-2.842A1 1 0 0 0 4 1zm7 19a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm12 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+                    data-original="#000000" paint-order="fill markers stroke"></path>
+                </svg>
+                <span class="absolute left-auto -ml-1 top-0 rounded-full bg-red-500 px-1 py-0 text-xs text-white">0</span>
+              </span>
+            <div
+              class='flex xl:w-80 max-xl:w-full bg-white px-6 py-3 rounded outline outline-transparent focus-within:outline-[#091235]'>
+              <input type='text' placeholder='Search'
+                class='w-full text-sm bg-transparent rounded outline-none pr-2' />
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.904 192.904" width="16px"
+                class="cursor-pointer fill-black">
+                <path
+                  d="m190.707 180.101-47.078-47.077c11.702-14.072 18.752-32.142 18.752-51.831C162.381 36.423 125.959 0 81.191 0 36.422 0 0 36.423 0 81.193c0 44.767 36.422 81.187 81.191 81.187 19.688 0 37.759-7.049 51.831-18.751l47.079 47.078a7.474 7.474 0 0 0 5.303 2.197 7.498 7.498 0 0 0 5.303-12.803zM15 81.193C15 44.694 44.693 15 81.191 15c36.497 0 66.189 29.694 66.189 66.193 0 36.496-29.692 66.187-66.189 66.187C44.693 147.38 15 117.689 15 81.193z">
+                </path>
+              </svg>
+            </div>
+          </div>
+          
+          <ul id="collapseMenu" class='lg:!flex lg:ml-14 lg:space-x-5 max-lg:space-y-2 max-lg:hidden max-lg:py-4 max-lg:w-full'>
+            <li class="bg-[#fdd000] font-sans cursor-pointer max-lg:border-b max-lg:py-2 text-white border border-black border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-50 outline-none duration-300 group">
+                <a href="#" class="bg-[#091235] absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 duration-500"></a>
+                About
+            </li>
+            <li class="bg-[#fdd000] font-sans cursor-pointer max-lg:border-b max-lg:py-2 text-white border border-black border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                <a href="javascript:void(0)" class="bg-[#091235] absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 duration-500"></a>
+                Offers
+            </li>
+            <li class="bg-[#fdd000] font-sans cursor-pointer max-lg:border-b max-lg:py-2 text-white border border-black border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                <a href="javascript:void(0)" class="bg-[#091235] absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 duration-500"></a>
+                SignUp
+            </li>
+            <li class="bg-[#fdd000] font-sans cursor-pointer max-lg:border-b max-lg:py-2 text-white border border-black border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                 Contact
+            </li>
+          </ul>
+          
+          
+        </div>
+      </header>
+        
+        </nav>
+        <script>
+            document.getElementById("hamburger").onclick = function toggleMenu() {
+                const navToggle = document.getElementsByClassName("toggle");
+                for (let i = 0; i < navToggle.length; i++) {
+                  navToggle.item(i).classList.toggle("hidden");
+                }
+              };
+        </script>
+
+<section class="">
+    <div class="container max-w-xl p-6 mx-auto space-y-12 lg:px-8 lg:max-w-7xl">
+      <div>
+        <h2 class="text-3xl font-bold text-center sm:text-5xl">Know About Us</h2>
+        <p class="max-w-3xl mx-auto mt-4 text-2xl text-center ">Your roadmap to the ultimate custom PC experience.</p>
+      </div>
+      <div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
+        <div>
+          <div class="mt-4 space-y-12">
+            <div class="flex">
+              <div class="flex-shrink-0">
+                <div class="flex items-center justify-center w-12 h-12 rounded-md">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-rocket">
+                    <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
+                    </path>
+                    <path
+                      d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z">
+                    </path>
+                    <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                    <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                  </svg></div>
+              </div>
+              <div class="ml-4">
+                <h4 class="text-lg font-medium leadi ">Elevate your computing with our expert guidance.</h4>
+                <p class="mt-2 text-lg "><span class="font-bold">PC_Build</span> website is your ultimate destination for all things related to constructing your dream PC. Whether you're a seasoned tech enthusiast or a novice looking to delve into the world of custom-built computers, this page has everything you need to get started. From comprehensive guides on selecting the right components to step-by-step tutorials for assembling your rig, we've got you covered. Explore our curated selection of hardware recommendations, expert tips, and troubleshooting advice to ensure your PC build experience is smooth and successful. Join our vibrant community of builders to share insights, seek assistance, and celebrate your completed builds. Start your journey towards the perfect PC today with PC_Build.</p>
+                <!-- make a contact us button -->
+                <button class="mt-4 text-white bg-[#fdd000] border-0 py-2 px-6 focus:outline-none hover:bg-opacity-75 rounded text-xl">Contact Us</button>
+              </div>
+            </div>
+            
+            
+            
+          </div>
+        </div>
+        <div aria-hidden="true" class="mt-10 lg:mt-0">
+          <img width="600" height="600" src="https://images.unsplash.com/photo-1516542076529-1ea3854896f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxNHx8Y29tcHV0ZXJ8ZW58MHwwfHx8MTY5OTE3MDk1N3ww&ixlib=rb-4.0.3&q=80&w=1080" class="mx-auto rounded-lg shadow-lg dark-bg-gray-500" style="color:transparent">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <br><br>
+    <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 mt-5">
+        <h2 class="mb-1 text-3xl font-extrabold leading-tight text-gray-900">Services</h2>
+        <p class="mb-12 text-lg text-gray-500">Here is a few of the awesome Services we provide.</p>
+        <div class="w-full">
+            <div class="flex flex-col w-full mb-10 sm:flex-row">
+                <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
+                    <div class="relative h-full ml-0 mr-0 sm:mr-10">
+                        <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-[#091235] rounded-lg"></span>
+                        <div class="relative h-full p-5 bg-white border-2 border-indigo-500 rounded-lg">
+                            <div class="flex items-center -mt-1">
+                                <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Understanding Your Needs</h3>
+                            </div>
+                            <p class="mt-3 mb-1 text-xs font-medium text-black uppercase">------------</p>
+                            <p class="mb-2 text-gray-600">Before diving into the intricacies of PC building, 
+                                it's essential to define your requirements. Are you a gamer seeking high frame rates
+                                and ultra-settings? Or perhaps a content creator needing powerful rendering capabilities?
+                                By understanding your needs, you can select components that align with your intended usage and budget.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full sm:w-1/2">
+                    <div class="relative h-full ml-0 md:mr-10">
+                        <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-[#091235] rounded-lg"></span>
+                        <div class="relative h-full p-5 bg-white border-2 border-indigo-500 rounded-lg">
+                            <div class="flex items-center -mt-1">
+                                <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Budgeting and Cost Optimization</h3>
+                            </div>
+                            <p class="mt-3 mb-1 text-xs font-medium text-black uppercase">------------</p>
+                            <p class="mb-2 text-gray-600">Building a PC can be a significant investment,
+                                but it doesn't have to break the bank. PC build websites often include
+                                budgeting tools and build configurators that allow you to estimate costs
+                                based on your chosen components. Moreover, they provide insights into cost-effective
+                                alternatives and bundle deals, helping you optimize your build without compromising on performance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col w-full mb-5 sm:flex-row">
+                <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
+                    <div class="relative h-full ml-0 mr-0 sm:mr-10">
+                        <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-[#091235] rounded-lg"></span>
+                        <div class="relative h-full p-5 bg-white border-2 border-indigo-500 rounded-lg">
+                            <div class="flex items-center -mt-1">
+                                <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Compatibility Assurance</h3>
+                            </div>
+                            <p class="mt-3 mb-1 text-xs font-medium text-black uppercase">------------</p>
+                            <p class="mb-2 text-gray-600">One of the most daunting aspects of PC building is ensuring compatibility between components.
+                                Fortunately, PC build websites streamline this process by flagging issues and offering compatibility checks. 
+                                </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
+                    <div class="relative h-full ml-0 mr-0 sm:mr-10">
+                        <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-[#091235] rounded-lg"></span>
+                        <div class="relative h-full p-5 bg-white border-2 border-indigo-500 rounded-lg">
+                            <div class="flex items-center -mt-1">
+                                <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Community Support and Feedback</h3>
+                            </div>
+                            <p class="mt-3 mb-1 text-xs font-medium text-black uppercase">------------</p>
+                            <p class="mb-2 text-gray-600">Building a PC is not just a solitary endeavor; it's a community-driven experience. PC build websites foster communities of enthusiasts and experts who are eager to share their knowledge and offer assistance. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full sm:w-1/2">
+                    <div class="relative h-full ml-0 md:mr-10">
+                        <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-[#091235] rounded-lg"></span>
+                        <div class="relative h-full p-5 bg-white border-2 border-indigo-500 rounded-lg">
+                            <div class="flex items-center -mt-1">
+                                <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Future Upgradability and Expansion</h3>
+                            </div>
+                            <p class="mt-3 mb-1 text-xs font-medium text-black uppercase">------------</p>
+                            <p class="mb-2 text-gray-600">A well-built PC is future-proofed for potential upgrades and expansions. PC build websites help you plan for the future by recommending components that offer scalability and compatibility with upcoming technologies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <footer class="bg-[#091235] text-white py-5">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <a href="#"><img src="pc-logo1.png" alt="logo" class="w-20 h-20"></a>
+            </div>
+          
+            <div>
+                <h1 class="text-2xl font-bold mb-4">Contact Us</h1>
+                <p class="text-sm">Email: pcbuild@gmail.com<a href="mailto:"></a></p>
+                <p class="text-sm">Phone: +1 (123) 456-7890</p>
+                <p class="text-sm">Address: 123 Main Street, City, Country</p>
+            </div>
+            <div>
+                <h1 class="text-2xl font-bold mb-4">Follow Us</h1>
+                <div class="flex items-center gap-4">
+                    <section class="flex justify-center items-center">
+                        <button
+                          href="/"
+                          class="group flex justify-center p-2 rounded-md drop-shadow-xl from-gray-800 bg-[#316FF6] text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="1em"
+                            height="1.1em"
+                            viewBox="0 0 448 512"
+                            stroke-width="0"
+                            fill="currentColor"
+                            stroke="currentColor"
+                            class="w-5"
+                          >
+                            <path
+                              d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"
+                            ></path>
+                          </svg>
+                          <span
+                            class="absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-10 duration-700"
+                          >
+                            Facebook
+                          </span>
+                        </button>
+                      </section>
+                      
+                      <section class="flex justify-center items-center">
+                        <button
+                          href="/"
+                          class="group flex justify-center p-2 rounded-md drop-shadow-xl bg-black text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 24 24"
+                            stroke-width="0"
+                            fill="currentColor"
+                            stroke="currentColor"
+                          >
+                            <path
+                              d="M8 2H1L9.26086 13.0145L1.44995 21.9999H4.09998L10.4883 14.651L16 22H23L14.3917 10.5223L21.8001 2H19.1501L13.1643 8.88578L8 2ZM17 20L5 4H7L19 20H17Z"
+                            ></path>
+                          </svg>
+                          <span
+                            class="absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-10 duration-700"
+                          >
+                            Twitter
+                          </span>
+                        </button>
+                      </section>
+                      
+                      <section class="flex justify-center items-center">
+                        <button
+                          href="/"
+                          class="group flex justify-center p-2 rounded-md drop-shadow-xl bg-gradient-to-r from-red-600 to-yellow-500 text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="1em"
+                            height="1.2em"
+                            viewBox="0 0 24 24"
+                            stroke-width="1"
+                            fill="currentColor"
+                            stroke="currentColor"
+                            class="w-5"
+                          >
+                            <path
+                              d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z"
+                            ></path>
+                          </svg>
+                          <span
+                            class="absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-10 duration-700"
+                          >
+                            Instagram
+                          </span>
+                        </button>
+                      </section>
+                      
+                      <section class="flex justify-center items-center">
+                        <button
+                          href="/"
+                          class="group flex justify-center p-2 rounded-md drop-shadow-xl bg-[#0077b5] from-gray-800 text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="1em"
+                            height="1.1em"
+                            viewBox="0 0 512 512"
+                            stroke-width="0"
+                            fill="currentColor"
+                            stroke="currentColor"
+                            class="w-5 h-5"
+                          >
+                            <path
+                              d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z"
+                            ></path>
+                          </svg>
+                          <span
+                            class="absolute opacity-0 group-hover:opacity-100 group-hover:text-white group-hover:text-sm group-hover:-translate-y-10 duration-700"
+                          >
+                            Linkedin
+                          </span>
+                        </button>
+                      </section>
+                      
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
